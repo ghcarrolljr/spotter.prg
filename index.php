@@ -1,4 +1,4 @@
-<!DOCTYOE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Football Spotter Program</title>
