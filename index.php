@@ -3,7 +3,7 @@
 	include 'config.php';
 
 	if ($host_name == "") {
-		die("<h3>You need to make a copy of the 'config.example.php' and name it 'config.php', then edit that file with the appropriate database access parameters.</h3>");
+		die("<h3>Did that now what</h3>");
 	}
 
 	$query = "";
