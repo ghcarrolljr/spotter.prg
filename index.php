@@ -1,10 +1,6 @@
 <?php
 	
-	include './.sec/config.php';
-
-	if ($host_name == "") {
-		die("<h3>Did that now what</h3>");
-	}
+	include '../.sec/config.php';
 
 	$query = "";
 	$playerDiv = "";
@@ -12,12 +8,11 @@
 	// Create connection
 
 	
-		$conn = mysqli_connect($host_name, $user_name, $password, $database);
+    $conn = mysqli_connect($host_name, $user_name, $password, $database);
 
-		if (mysqli_connect_errno()) {
-		  die('<p>Failed to connect to MySQL: '.mysqli_connect_error().'</p>');
-		} 
-	//$conn = mysqli_connect("localhost", "root", "Passw0rd?", "dbs217277");
+    if (mysqli_connect_errno()) {
+      die('<p>Failed to connect to MySQL: '.mysqli_connect_error().'</p>');
+    } 
 	if ($conn == false){echo "error loading db";}
 	if (!empty($_POST)) { // Checks to see if it received a form submission
 		$refreshInterval = ""; // Clear this because this person is entering values
