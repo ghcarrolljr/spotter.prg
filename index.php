@@ -11,23 +11,7 @@
 	$refreshInterval = "checked";
 	// Create connection
 
-	function readCSV($csvFile){
-		$file_handle = fopen($csvFile, 'r');
-		while (!feof($file_handle) ) {
-			$line_of_text[] = fgetcsv($file_handle, 1024);
-		}
-		fclose($file_handle);
-		return $line_of_text;
-	}
-	$csvFile = '../.sec/hold';
-
-	$csv = readCSV($csvFile);
-	$host_name = $csv[1][0];
-	$database = $csv[1][1];
-	$user_name = $csv[1][2];
-	$password = $csv[1][3];
-
-	fclose($handle);
+	
 		$conn = mysqli_connect($host_name, $user_name, $password, $database);
 
 		if (mysqli_connect_errno()) {
