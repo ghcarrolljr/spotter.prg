@@ -1,6 +1,6 @@
 <?php
 	
-	include 'config.php';
+	include './.sec/config.php';
 
 	if ($host_name == "") {
 		die("<h3>Did that now what</h3>");
